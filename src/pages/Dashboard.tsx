@@ -80,10 +80,10 @@ export default function Dashboard() {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          <StatCard title="Hábitos hoy" value={`${completedToday}/${totalToday}`} subtitle={`${completionPercentage}% completado`} icon={<CheckCircle2 className="h-5 w-5" />} />
-          <StatCard title="Libros leídos" value={`${completedBooks}/${totalBooks}`} subtitle={`${Math.round((completedBooks / Math.max(totalBooks, 1)) * 100)}% del plan`} icon={<BookOpen className="h-5 w-5" />} />
-          <StatCard title="Objetivos" value={`${completedGoals}/${goals.length}`} subtitle="completados" icon={<Target className="h-5 w-5" />} />
-          <StatCard title="Racha actual" value={`${streak} días`} subtitle="consecutivos" icon={<Flame className="h-5 w-5" />} />
+          <StatCard title="Hábitos hoy" value={`${completedToday}/${totalToday}`} subtitle={`${completionPercentage}% completado`} icon={CheckCircle2} />
+          <StatCard title="Libros leídos" value={`${completedBooks}/${totalBooks}`} subtitle={`${Math.round((completedBooks / Math.max(totalBooks, 1)) * 100)}% del plan`} icon={BookOpen} />
+          <StatCard title="Objetivos" value={`${completedGoals}/${goals.length}`} subtitle="completados" icon={Target} />
+          <StatCard title="Racha actual" value={`${streak} días`} subtitle="consecutivos" icon={Flame} />
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
